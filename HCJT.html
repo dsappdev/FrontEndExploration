@@ -1,0 +1,103 @@
+<!--<!DOCTYPE html>-->
+<html>
+<head>
+
+<script src="MyJS.js"></script>
+<link rel="stylesheet" type="text/css" href="CSSTutorial.css">
+  <title>Web Tutorial</title>
+</head>
+
+<body onload="pageLoad()">
+
+<h1>HTML, CSS, & JS Training</h1>
+<p id="demo">A paragraph.</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+<button type="button" onclick="resetFunction()">Reset</button>
+
+
+
+<!--<form name="mathForm">-->
+<div id='numberBlock'>
+	<div id='mathBlock'>
+		<div id='boxBlock'>
+			First number:
+			<input type="number" id="numA">
+			<br>
+			Second number:
+			<input type="number" id="numB">
+			<br>
+			Your answer is:
+			<input type ="text" id="answerBox"/>
+		</div>
+	
+		<div id='colorBlock'>
+			<div id='leftColor'>				
+				<div id='green' onclick='colorChange(this.id)'>Green</div>
+				<div id='blue' onclick='colorChange(this.id)'>Blue</div>
+			</div>
+			<div id='rightColor'>
+				<div id='yellow' onclick='colorChange(this.id)'>Yellow</div>
+				<div id='red' onclick='colorChange(this.id)'>Red</div>
+			</div>
+		</div>
+		<div id='displayBox'></div>
+	</div>
+
+	<!-- 
+		In this block, the onclick calls the 'doMath' function. The 'doMath' 
+		  then takes as an argument a parameter that calls another function 
+		  tp perform a mathmatical operation
+	-->
+	<div>
+		<button type="button" onclick="doMath(addNumTwo)">Add Box</button>
+		<button type="button" onclick="doMath(subNumTwo)">Sub Box</button>
+		<button type="button" onclick="doMath(mulNumTwo)">Mul Box</button>
+		<button type="button" onclick="doMath(divNumTwo)">Div Box</button>
+	</div>
+		<br>
+	<div>
+		<button type="button" onclick="addNum()">Add</button>
+		<button type="button" onclick="subNum()">Subtract</button>
+		<button type="button" onclick="mulNum()">Multiply</button>
+		<button type="button" onclick="divNum()">Divide</button>
+		<button id='clearAll' type="button" onclick="resetMath()">Clear All</button>
+	</div>
+	<div>
+		<p>The sum is: <span id="addOutput"></span></p>
+		<p>The difference is: <span id="subOutput"></span></p>
+		<p>The product is: <span id="mulOutput"></span></p>
+		<p>The quotient is: <span id="divOutput"></span></p>
+	</div>
+	<div>
+		
+	</div>
+</div>
+
+<!--</form>-->
+<br>
+
+<div id='citySection'>
+<!--<form name="cityForm">-->
+Which city would you like more information on?
+<input type="radio" name="City" value="london" onclick="parParagraph()" id ="london" checked>London&nbsp
+<input type="radio" name="City" value="paris" onclick="parParagraph()" id="paris" >Paris&nbsp
+<input type="radio" name="City" value="tokyo" onclick="parParagraph()" id="tokyo">Tokyo<br>
+
+	<div id="cityBlock">
+		<div id="cities">
+			<h2 id="cityh2"></h2>
+			<p id="cityp"></p>
+		</div><div id="citypic">
+		</div>
+	</div>
+	
+<!--</form>-->
+</div>
+<br><br>
+Would you like to win a trip to one of these cities? Then <a href="ContestEntry.html">click here</a> to find find out how
+
+
+
+</body>
+</html>

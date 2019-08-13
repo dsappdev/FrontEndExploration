@@ -1,0 +1,190 @@
+/*
+	Element selector:
+	p {}
+	
+	ID Selector:
+	#para1 {}
+	
+	Class Selector:
+	p.center {}
+	
+	Cascading Order (lowest: #1 highest: #3)
+	1. Browser Default
+	2. External and internal stylesheets
+	3. Inline style
+			
+	CSS Box Model (From inner-most to outer-most):
+		Content - The content of the box, where text and images appear
+		Padding - Clears an area around the content. The padding is transparent
+		Border - A border that goes around the padding and content
+		Margin - Clears an area outside the border. The margin is transparent
+	
+*/	
+
+
+
+h1 {
+
+}
+
+body {
+	background-color: #66CCFF;
+}
+
+input[type="text"] {
+	width: 250px;
+	background-color: linen;
+}
+
+#answerBox {
+	background-color: #FFCC66;
+}
+
+#numA {
+	background-color: linen;
+}
+
+#numB {
+	background-color: linen;
+}
+
+#mathBlock {
+	
+}
+
+#boxBlock {
+	display: inline-block;
+	
+}
+
+#colorBlock {
+	display: inline-block;
+	margin-left: 100px;
+	
+}
+
+#leftColor {
+	float: left;
+	
+}
+
+#rightColor {
+	float: right;
+}
+
+#displayBox {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: #66CCFF;
+	/*background-color: white;*/
+	margin-bottom: 25px;
+	margin-left: 20px;
+	
+}
+
+#green {
+	background-color: #33CC33;
+	width: 50px;
+	height: 50px;
+	border: 1px solid black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+#blue {
+	background-color: #0033CC;
+	width: 50px;
+	height: 50px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#yellow {
+	background-color: #FFFF66;
+	width: 50px;
+	height: 50px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#red {
+	background-color: #FF3300;
+	width: 50px;
+	height: 50px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+#clearAll {
+	margin-left: 230px;
+	height: 50px;
+	width: 50px;
+	border: 1px solid black;
+	border-radius: 5px;
+	background: linear-gradient(#FF1919,#0099FF);
+}
+#addOutput, #subOutput, #mulOutput, #divOutput {
+	background-color: linen;
+}
+
+#cityBlock {
+	/*
+		The width of the container should be the sum
+		of the width of the two elements and the
+		padding values.
+		480 + 480 + 35 + 35 = 1030
+		
+		The height was kept the same even though
+		there is a padding value along the top. (?)
+	*/
+	width: 1030px;
+	height: 270px;
+	border-style: solid;
+	border-width: 5px;
+	border-color: #FFFF00;
+}
+
+
+#cities {
+	background-color: #3333FF;
+	color: #FFFF00;
+	height: 270px;
+	width: 480px;
+	/* Use justify to make it look
+	   like a newspaper column */
+	text-align: justify;
+	padding- top: 25px;
+	padding-right: 35px;
+	padding-left: 35px;
+	float: left;
+	
+}
+
+
+#citypic {	
+	background-repeat: no-repeat;
+	height: 270px;
+	width: 480px;
+	float: right;
+	
+}
+
+
+
